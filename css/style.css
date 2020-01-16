@@ -1,0 +1,91 @@
+
+a, a:visited {
+  color:#333;
+}
+
+#container {
+  padding-top:20px;
+  width: 980px;
+  border-left: 5px rgb(22, 14, 14) solid;
+  border-right: 5px rgb(22, 14, 14) solid;
+}
+
+header {
+  padding: 5px;
+}
+
+#book-title {
+  font-family: georgia, "times new roman", times, serif;
+  color: #555;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+#text-select {
+  float:right;
+  margin-right: 10px;
+}
+
+#vis {
+  overflow: hidden;
+  position: relative;
+}
+
+#status {
+  padding:0 0 20px 20px;
+}
+
+#controls {
+  padding: 20px;
+  background-color: #eee;
+  margin: 10px;
+  width: 350px;
+}
+
+#bubble-background {
+  fill: none;
+  pointer-events: all;
+}
+
+.bubble-node {
+  fill: rgb(150, 189, 240);
+}
+
+.bubble-hover {
+  fill: rgb(173, 218, 129);
+}
+
+.bubble-selected {
+  fill: rgb(228, 171, 139);
+  stroke: rgb(22, 24, 20);
+  stroke-width: 1.5px;
+}
+
+.active {
+  color: rgb(228, 171, 139);
+}
+
+a.bubble-label {
+  font-family: georgia, "times new roman", times, serif;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1em;
+  position: absolute;
+}
+
+
+.bubble-label .bubble-label-value {
+  font: 11px sans-serif;
+  white-space: nowrap;
+}
+
+footer p {
+  text-align: center;
+  padding-top:20px;
+  padding-bottom:20px;
+  font: 13px sans-serif;
+}
+
