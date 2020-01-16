@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Avengers Character Screentime</title>
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+  <script defer src="js/plugins.js"></script>
+  <script src="js/libs/d3.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div id="container" class="container">
+      <select id="text-select">
+        <option value="ave">The Avengers</option><!--the option value will correspond to the key of the csv file within the array list_of_data-->      
+        <option value="ultron">Age of Ultron</option>               
+        <option value="iw">Infinity War</option>    
+        <option value="end">Endgame</option>     
+        <option value="ov">Overall</option>        
+      </select>
+    <header>
+    <h1>Bubble Cloud</h1>
+    <h2>Characters with the most Screentime in Avengers</h2>
+      <h2 id="book-title"></h2>
+    </header>
+    <div id="main" role="main">
+      <div id="vis"></div>
+      <div id="status"></div>
+      <div id="controls">
+        <h3>Jitter</h3>
+        <form id="jitter" oninput="output.value = (jitter_input.value / 200).toFixed(3)" >
+          <input id="jitter_input" type="range" min="0" max="400" value="100" style="width:240px;">
+          <output name="output" for="input">Adjust Jitter</output>
+        </form>
+      </div>
+    </div>
+    <footer>
+    <p><a href="https://www.dur.ac.uk/research/directory/staff/?mode=staff&id=106">Easter Egg</a> | <a href="https://opensource.org/licenses/MIT">License</a> | <a href="https://github.com/vlandham/bubble_cloud">Original Inspiration(Source code)</a></p>
+    </footer>
+  </div> <!--! end of #container -->
+</body>
+</html>
